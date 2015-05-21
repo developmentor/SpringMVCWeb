@@ -25,7 +25,6 @@ public class AccountController {
 	public ResponseEntity<AccountResource> createAccount(@RequestBody AccountResource sentAccount) {
 		try {
 			Account createdAccount = accountService.createAccount(sentAccount);
-			AccountReso
 			
 		} catch(AccountExistsException exception){
 			
